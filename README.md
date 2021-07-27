@@ -15,9 +15,9 @@
 
 1. Berkeley: CSS Master + JavaScript Help
 2. Chris: Deployment + Javascript
-3. Jared: CSS & HTML MarkUp
-4. Scott: Wireframe, CSS + JavaScript
-5. CJ: CSS & HTML MarkUp
+3. Jared: Wireframe, CSS & HTML MarkUp
+4. Scott: CSS + JavaScript
+5. CJ: Wireframe, CSS & HTML MarkUp
 
 # Getting Started With Project 3
 
