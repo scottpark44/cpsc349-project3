@@ -19,7 +19,7 @@
 4. Scott: CSS for Layout 2 and Submission\
 5. CJ: CSS for Layout 1 with TailWind
 
-
+# Getting Started With Project 3
 
 This project uses a simpler configuration that does not use Eleventy
 (though you are welcome to add it yourself).
