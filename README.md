@@ -5,10 +5,10 @@
 
 ## Group #4 - Axolotl
 
-1. Berkeley C.\
-2. Chris Nutter\
-3. Jared Schneider\
-4. Scott Park\
+1. Berkeley C.
+2. Chris Nutter
+3. Jared Schneider
+4. Scott Park
 5. CJ Thompson
 
 ## Responsibilities
