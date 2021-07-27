@@ -1,7 +1,7 @@
 
 # Project 2 - TailWind
 
-![axolotl](https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/39/Blue_Axolotl_JE2.png/revision/latest?cb=20210402204253)
+![axolotl](https://www.safarivet.com/wp-content/uploads/2021/03/care-of-the-axolotl.jpg)
 
 ## Group #4 - Axolotl
 
