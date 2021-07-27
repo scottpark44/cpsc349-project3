@@ -5,7 +5,7 @@
 
 ## Group #4 - Axolotl
 
-~~1. Berkeley C.~~\
+1. Berkeley C.\
 2. Chris Nutter\
 3. Jared Schneider\
 4. Scott Park\
@@ -13,11 +13,11 @@
 
 ## Responsibilities
 
-~~1. Berkeley: CSS Master~~\
-2. Chris: Setting up GitHub, CSS Master, CSS for Layout 3\
-3. Jared: CSS for Layout 1\
-4. Scott: CSS for Layout 2 and Submission\
-5. CJ: CSS for Layout 1 with TailWind
+1. Berkeley: CSS Master + JavaScript Help\
+2. Chris: Deployment + Javascript\
+3. Jared: CSS & HTML MarkUp\
+4. Scott: Wireframe, CSS + JavaScript\
+5. CJ: CSS & HTML MarkUp
 
 # Getting Started With Project 3
 
