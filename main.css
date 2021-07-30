@@ -1,0 +1,18 @@
+input[type="text"]{
+    width: 1000px;
+    border-radius: 10px;
+    color: red;
+    margin:auto;
+}
+button{
+    border-radius: 10px;
+    background-color:rgb(71, 160, 233);
+}
+button:hover{
+ background-color:red;
+}
+
+.box {
+ width: 500px;
+ height: 600px;
+}

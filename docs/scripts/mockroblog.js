@@ -1,5 +1,11 @@
 /* Mockroblog client API stubs for prototyping */
 
+let dict = {
+  1: "ProfAvery",
+  2: "KevinAWortman",
+  3: "Beth_CSUF"
+}
+
 export function createUser (username, email, password) {
   if (['ProfAvery', 'KevinAWortman', 'Beth_CSUF'].indexOf(username) < 0) {
     return {
@@ -224,4 +230,8 @@ export function postMessage (userId, text) {
       timestamp: timestamp
     }
   }
+}
+
+export function getUserName(userId){
+  return dict[userId]
 }
