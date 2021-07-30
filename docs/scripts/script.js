@@ -1,6 +1,7 @@
 import * as mockroblog from './mockroblog.js'
 
 let timeline = mockroblog.getPublicTimeline()
+let bro = mockroblog.tailwind_css()
 
 for(let i = 0; i < timeline.length; i++){
     // Create an <div></div>
@@ -10,9 +11,14 @@ for(let i = 0; i < timeline.length; i++){
     // Add the text to the <div></div>
     foo.appendChild(text);
     // Adding classes to foo
-    foo.classList.add("text-xl");
+    for(let i = 0; i < bro.length; i++){
+        foo.classList.add(bro[0]);
+    }
     // Find an element with ID "posts", and place the <div></div> in there.
     let element = document.getElementById("posts");
     element.appendChild(foo);
 }
+
+
+
 

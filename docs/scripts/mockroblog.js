@@ -7,7 +7,8 @@ let dict = {
 }
 
 let tailwind_class = [
-  "text-2xl", "font-mono"
+  "text-2xl", 
+  "font-mono"
 ]
 
 export function createUser (username, email, password) {
@@ -238,4 +239,8 @@ export function postMessage (userId, text) {
 
 export function getUserName(userId){
   return dict[userId]
+}
+
+export function tailwind_css(){
+  return tailwind_class
 }
