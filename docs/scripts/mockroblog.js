@@ -6,6 +6,10 @@ let dict = {
   3: "Beth_CSUF"
 }
 
+let tailwind_class = [
+  "text-2xl", "font-mono"
+]
+
 export function createUser (username, email, password) {
   if (['ProfAvery', 'KevinAWortman', 'Beth_CSUF'].indexOf(username) < 0) {
     return {
