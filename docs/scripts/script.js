@@ -12,7 +12,7 @@ for(let i = 0; i < timeline.length; i++){
     foo.appendChild(text);
     // Adding classes to foo
     for(let i = 0; i < bro.length; i++){
-        foo.classList.add(bro[0]);
+        foo.classList.add(bro[i]);
     }
     // Find an element with ID "posts", and place the <div></div> in there.
     let element = document.getElementById("posts");
