@@ -14,7 +14,6 @@ let tailwind_class = [
   "my-2",
   "font-mono",
   "whitespace-pre-line",
-  // "bg-clip-content",
   "bg-indigo-600"
 ]
 
