@@ -18,8 +18,19 @@ let tailwind_class = [
   "rounded-md"
 ]
 
+let user_list = [
+  'ProfAvery', 
+  'KevinAWortman', 
+  'Beth_CSUF'
+]
+
+
+
 export function createUser (username, email, password) {
-  if (['ProfAvery', 'KevinAWortman', 'Beth_CSUF'].indexOf(username) < 0) {
+  if (user_list.indexOf(username) < 0) {
+    
+    user_list.push(username);
+    
     return {
       id: 4,
       username: username,
@@ -250,4 +261,12 @@ export function getUserName(userId){
 
 export function tailwind_css(){
   return tailwind_class
+}
+
+export function return_Users(){
+  return user_list
+}
+
+export function display_user_data(user){
+  console.log(user);
 }

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- This page is display all the current users -->
     <head>
         <title>Mockroblog</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles/tailwind.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <script type="module" src="scripts/init.js"></script>
-	    <script type="module" src="scripts/script.js"></script>
+        <link rel="stylesheet" href="../styles/tailwind.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <script type="module" src="../scripts/init.js"></script>
+	    <script type="module" src="../scripts/user_info.js"></script>
     </head>
     <body>
         <header class="bg-indigo-500 text-white py-5 px-4 flex space-x-2">
@@ -16,7 +17,7 @@
             <div class="container flex flex-col items-end justify-between mx-auto">
               <ul class="flex items-center list-reset text-2xl">
                 <li class="ml-4">
-                  <a class="text-white" href="/docs/index.html">Home</a>
+                  <a class="text-white" href="index.html">Home</a>
                 </li>
                 <li class="ml-4">
                   <a class="text-white" href="index.html">About</a>
@@ -26,7 +27,7 @@
           </header>
           <div class="flex flex-grow justify-between">
               <div class="mx-auto ml-20 my-2 font-sans text-blue-300 text-left text-4xl">
-                Users
+                Public Timeline
                    <!-- <h1>Mockroblog</h1>
                     <pre id="timeline-json">
                     </pre>
@@ -39,10 +40,13 @@
                 <div class="grid gap-1" id="posts">
 
                 </div>
+                <div class="grid gap-1" id="user_home">
+
+                </div>
               </div>
               <div class="bg-blue-400 w-2/5 min-h-full font-sans text-center text-white p-4">
                     <ul>
-                        <li class="hover:text-gray-500"> <a href="./pages/user_info.html">Users</a></li>
+                        <li class="hover:text-gray-500">Users</li>
                         <li class="hover:text-gray-500">Messages</li>
                         <li class="hover:text-gray-500">Notifications</li>
                         <li class="hover:text-gray-500">Links</li>
