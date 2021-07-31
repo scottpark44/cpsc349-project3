@@ -14,7 +14,8 @@ let tailwind_class = [
   "my-2",
   "font-mono",
   "whitespace-pre-line",
-  "bg-indigo-600"
+  "bg-indigo-600",
+  "rounded-md"
 ]
 
 export function createUser (username, email, password) {
