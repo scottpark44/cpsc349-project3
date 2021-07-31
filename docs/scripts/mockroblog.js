@@ -12,7 +12,6 @@ let tailwind_class = [
   "p-2",
   "font-mono",
   "bg-clip-content",
-  "bg-indigo-600"
 ]
 
 export function createUser (username, email, password) {
