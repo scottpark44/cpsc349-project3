@@ -8,10 +8,14 @@ let dict = {
 
 let tailwind_class = [
   "text-2xl",
-  "text-center",
-  "p-2",
+  "text-left",
+  "w-3/4",
+  "p-6",
+  "my-2",
   "font-mono",
-  "bg-clip-content",
+  "whitespace-pre-line",
+  // "bg-clip-content",
+  "bg-indigo-600"
 ]
 
 export function createUser (username, email, password) {
