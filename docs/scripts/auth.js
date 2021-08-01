@@ -37,5 +37,5 @@ function auth_up() {
 	let password = document.getElementById("password").value; // plaintext lmao
 
 	mockroblog.createUser(username, email, password);
-	location.replace("/pages/login.html");
+	location.replace("../pages/login.html");
 }
