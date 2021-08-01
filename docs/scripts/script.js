@@ -28,11 +28,13 @@ let submit_button = document.getElementById("message_submit");
 
 submit_button.onclick = function add_to_posts(){
     let message = document.getElementById('message').value;
-    console.log(message);
+    let message_details = mockroblog.postMessage(5, message);
     let foo = document.createElement("div");
     let quote = document.createElement("blockquote");
-    let text = document.createTextNode(message);
+    let text = document.createTextNode(message_details.text + " @" + " ");
+    let time = document.createTextNode(message_details.timestamp);
     quote.appendChild(text);
+    quote.appendChild(time);
     foo.appendChild(quote);
     for(let i = 0; i < bro.length; i++){
         foo.classList.add(bro[i]);
