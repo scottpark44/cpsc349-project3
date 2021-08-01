@@ -11,9 +11,12 @@ function auth_login() {
 	
 	let username = document.getElementById("username").value;
 	let password = document.getElementById("password").value; // plaintext lmao
+	
+	let authy = mockroblog.authenticateUser(username, password);
 
-	if (mockroblog.authenticateUser(username, password) === null) { wrong.innerHTML = "<br><center>Wrong username or password</center>"; }
-	else { location.replace("/"); }
+	if (authy === null) { wrong.innerHTML = "<br><center>Wrong username or password</center>"; }
+	else { wrong.innerHTML = "<br><center>Logged in successfully!"; return authy; }
+	
 }
 
 function auth_up() {
