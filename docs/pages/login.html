@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../styles/tailwind.css">
         <link rel="stylesheet" href="../styles/main.css">
         <script type="module" src="../scripts/init.js"></script>
+        <script type="module" src="../scripts/auth.js"></script>
     </head>
     <body>
         <header class="bg-indigo-500 text-white py-5 px-4 flex space-x-2">
@@ -29,22 +30,16 @@
             Log In
           </p>
 
-	  <p id="wrong"/>
+	  <p class="text-red-500" id="wrong"/>
 
           <div class="pt-10 pb-8 flex items-center justify-center">
-          <form class="rounded w-60">
+
           <div class="rounded space-y-6 w-60">
-            <div>
-              <label for="username" class="sr-only">Username</label>
-              <input id="username" name="username" type="username" required class="appearance-none border rounded relative block w-full px-3 py-2 border border-blue-300 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Username">
-            </div>
-            <div>
-              <label for="password" class="sr-only">Password</label>
-              <input id="password" name="password" type="password" required class="appearance-none border rounded relative block w-full px-3 py-2 border border-blue-300 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Password">
-            </div>
+              <input id="username" name="username" type="" required class="appearance-none border rounded relative block w-full px-3 py-2 border border-blue-300 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Username"/>
+              <input id="password" name="password" type="password" required class="appearance-none border rounded relative block w-full px-3 py-2 border border-blue-300 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="Password"/>
 
           </div>
-        </form>
+
       </div>
 
       <div class="flex items-center justify-center">
