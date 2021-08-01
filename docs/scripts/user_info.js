@@ -13,6 +13,35 @@ let tailwind_class = mockroblog.tailwind_css();
     (let a = element.innerHTML), then use that variable to call information.
 */
 
+//      Function for implementing getUserTimeline
+function print_new_content(user_content){
+    let current_content = document.getElementById("posts");
+    current_content.style.display = "none";
+            
+    for(let j = 0; j < user_content.length; j++){
+        // make div, blockquote, and p
+        let man = document.createElement("div");
+        let quote = document.createElement("blockquote");
+        let post_time = document.createElement("p");
+        // Retrieve text from an array from getUserTimeline
+        let text = document.createTextNode(user_content[j].text);
+         // Add the text to the blockquote
+        quote.appendChild(text);
+         // Adding classes to div
+        for(let i = 0; i < tailwind_class.length; i++){
+            man.classList.add(tailwind_class[i]);
+        }
+        // Add Timestamp
+        post_time.innerHTML = user_content[j].timestamp;
+
+        man.appendChild(quote);
+        man.appendChild(post_time);
+        let new_content = document.getElementById("user_info");
+        new_content.appendChild(man);
+
+        document.getElementById("content_name").innerHTML = mockroblog.getUserName(user_content[j].user_id)+"'s Previous Posts";
+    }
+}
 for(let i = 0; i < 3; i++){
     // making div and button
     let foo = document.createElement("div");
@@ -25,87 +54,15 @@ for(let i = 0; i < 3; i++){
     btn.onclick = function display_user_data(){
         
         if (user_list[i] == "ProfAvery"){
-            let current_content = document.getElementById("posts");
-            current_content.style.display = "none";
-            
-            
-            for(let j = 0; j < mockroblog.getUserTimeline(user_list[i]).length; j++){
-                // make div, blockquote, and p
-                let man = document.createElement("div");
-                let quote = document.createElement("blockquote");
-                let post_time = document.createElement("p");
-                // Retrieve text from an array from getUserTimeline
-                let bro = mockroblog.getUserTimeline(user_list[i]);
-                let text = document.createTextNode(bro[j].text);
-                // Add the text to the blockquote
-                quote.appendChild(text);
-                // Adding classes to div
-                for(let i = 0; i < tailwind_class.length; i++){
-                    man.classList.add(tailwind_class[i]);
-                }
-                // Add Timestamp
-                post_time.innerHTML = bro[j].timestamp;
-                man.appendChild(quote);
-                man.appendChild(post_time);
-                let new_content = document.getElementById("user_info");
-                new_content.appendChild(man);
-            }
+            print_new_content(mockroblog.getUserTimeline(user_list[i]));
         }
 
         if (user_list[i] == "KevinAWortman"){
-            let current_content = document.getElementById("posts");
-            current_content.style.display = "none";
-            
-            
-            for(let j = 0; j < mockroblog.getUserTimeline(user_list[i]).length; j++){
-                // make div, blockquote, and p
-                let man = document.createElement("div");
-                let quote = document.createElement("blockquote");
-                let post_time = document.createElement("p");
-                // Retrieve text from an array from getUserTimeline
-                let bro = mockroblog.getUserTimeline(user_list[i]);
-                let text = document.createTextNode(bro[j].text);
-                // Add the text to the blockquote
-                quote.appendChild(text);
-                // Adding classes to div
-                for(let i = 0; i < tailwind_class.length; i++){
-                    man.classList.add(tailwind_class[i]);
-                }
-                // Add Timestamp
-                post_time.innerHTML = bro[j].timestamp;
-                man.appendChild(quote);
-                man.appendChild(post_time);
-                let new_content = document.getElementById("user_info");
-                new_content.appendChild(man);
-            }
+            print_new_content(mockroblog.getUserTimeline(user_list[i]));
         }
 
         if (user_list[i] == "Beth_CSUF"){
-            let current_content = document.getElementById("posts");
-            current_content.style.display = "none";
-            
-            
-            for(let j = 0; j < mockroblog.getUserTimeline(user_list[i]).length; j++){
-                // make div, blockquote, and p
-                let man = document.createElement("div");
-                let quote = document.createElement("blockquote");
-                let post_time = document.createElement("p");
-                // Retrieve text from an array from getUserTimeline
-                let bro = mockroblog.getUserTimeline(user_list[i]);
-                let text = document.createTextNode(bro[j].text);
-                // Add the text to the blockquote
-                quote.appendChild(text);
-                // Adding classes to div
-                for(let i = 0; i < tailwind_class.length; i++){
-                    man.classList.add(tailwind_class[i]);
-                }
-                // Add Timestamp
-                post_time.innerHTML = bro[j].timestamp;
-                man.appendChild(quote);
-                man.appendChild(post_time);
-                let new_content = document.getElementById("user_info");
-                new_content.appendChild(man);
-            }
+            print_new_content(mockroblog.getUserTimeline(user_list[i]));
         }
     };
 
