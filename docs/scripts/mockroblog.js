@@ -37,6 +37,7 @@ let user_list = [
   'Beth_CSUF'
 ]
 
+let num_List = []
 
 
 export function createUser (username, email, password) {
@@ -282,4 +283,12 @@ export function tailwind_css2(){
 
 export function return_Users(){
   return user_list
+}
+
+export function push_to_numlist(num){
+  num_List.push(num);
+}
+
+export function return_numlist(){
+  return num_List[0];
 }
