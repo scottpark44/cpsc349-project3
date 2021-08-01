@@ -15,6 +15,19 @@ let tailwind_class = [
   "font-mono",
   "whitespace-pre-line",
   "bg-indigo-600",
+  "rounded-md",
+  "overflow-auto"
+]
+
+let tailwind_class2 = [
+  "text-2xl",
+  "text-center",
+  "w-auto",
+  "p-4",
+  "my-2",
+  "font-mono",
+  "whitespace-pre-line",
+  "bg-indigo-600",
   "rounded-md"
 ]
 
@@ -261,6 +274,10 @@ export function getUserName(userId){
 
 export function tailwind_css(){
   return tailwind_class
+}
+
+export function tailwind_css2(){
+  return tailwind_class2
 }
 
 export function return_Users(){

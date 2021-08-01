@@ -14,3 +14,4 @@ function auth() {
 	if (mockroblog.authenticateUser(username, password) === null) { wrong.innerHTML = "<br><center>Wrong username or password</center>"; }
 	else { wrong.innerHTML = "<meta http-equiv='Refresh' content='0; url='/' />" }
 }
+

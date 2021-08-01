@@ -1,8 +1,10 @@
 import * as mockroblog from './mockroblog.js'
+import * as auth from './auth.js'
 
 let user_list = mockroblog.return_Users();
 //let user_timeline = mockroblog.getUserTimeline();
-let tailwind_class = mockroblog.tailwind_css();
+let tailwind_class = mockroblog.tailwind_css2();
+
 
 /*  need to find ways to:
 1.******* somehow get the correct user name ****** 
@@ -42,33 +44,34 @@ function print_new_content(user_content){
         document.getElementById("content_name").innerHTML = mockroblog.getUserName(user_content[j].user_id)+"'s Previous Posts";
     }
 }
+
 for(let i = 0; i < 3; i++){
     // making div and button
     let foo = document.createElement("div");
     let btn = document.createElement("button");
-
+    let btn2 = document.createElement("button");
+    let followed = false;
     //  setting btn to have the username inside
     btn.innerHTML = user_list[i];
-
+    btn2.innerHTML = "Follow";
     //  Adding onclick to button (display_user_data is in mockroblog.js)
     btn.onclick = function display_user_data(){
-        
-        if (user_list[i] == "ProfAvery"){
-            print_new_content(mockroblog.getUserTimeline(user_list[i]));
-        }
-
-        if (user_list[i] == "KevinAWortman"){
-            print_new_content(mockroblog.getUserTimeline(user_list[i]));
-        }
-
-        if (user_list[i] == "Beth_CSUF"){
-            print_new_content(mockroblog.getUserTimeline(user_list[i]));
-        }
+        print_new_content(mockroblog.getUserTimeline(user_list[i]));
     };
 
+    btn2.onclick = function is_follow(){
+        followed = !followed;
+        if(followed == false){
+            btn2.innerHTML = "Follow";
+        }
+        else {
+            btn2.innerHTML = "Unfollow";
+        }
+    }
 
+  
 
-    // Adding classes to foo
+    //  CSS STYLING FOR NAME BOXES Adding classes to foo
     for(let i = 0; i < tailwind_class.length; i++){
         foo.classList.add(tailwind_class[i]);
     }
@@ -78,7 +81,11 @@ for(let i = 0; i < 3; i++){
 
     // Find an element with ID "posts", and place the <div></div> in there.
     let element = document.getElementById("posts");
+
+
     element.appendChild(foo);
+    element.appendChild(btn2);
+
 
 }
 
