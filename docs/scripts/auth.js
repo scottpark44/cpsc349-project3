@@ -3,7 +3,6 @@ import * as mockroblog from './mockroblog.js'
 let wrong = document.getElementById("wrong");
 let submit_login = document.getElementById("submit_login");
 let submit_up = document.getElementById("submit_up");
-let login_user = "";
 if (submit_login) { submit_login.addEventListener("click",auth_login); }
 if (submit_up) { submit_up.addEventListener("click",auth_up); }
 

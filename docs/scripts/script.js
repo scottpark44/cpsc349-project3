@@ -24,6 +24,22 @@ for(let i = 0; i < timeline.length; i++){
     element.appendChild(foo);
 }
 
+let submit_button = document.getElementById("message_submit");
+
+submit_button.onclick = function add_to_posts(){
+    let message = document.getElementById('message').value;
+    console.log(message);
+    let foo = document.createElement("div");
+    let quote = document.createElement("blockquote");
+    let text = document.createTextNode(message);
+    quote.appendChild(text);
+    foo.appendChild(quote);
+    for(let i = 0; i < bro.length; i++){
+        foo.classList.add(bro[i]);
+    }
+    let element = document.getElementById("posts");
+    element.appendChild(foo);
+}
 
 
 
