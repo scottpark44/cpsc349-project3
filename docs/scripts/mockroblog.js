@@ -266,7 +266,3 @@ export function tailwind_css(){
 export function return_Users(){
   return user_list
 }
-
-export function display_user_data(user){
-  console.log(user);
-}
