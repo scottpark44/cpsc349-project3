@@ -4,9 +4,10 @@
         <title>Mockroblog</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles/tailwind.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <script type="module" src="scripts/init.js"></script>
+        <link rel="stylesheet" href="../styles/tailwind.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <script type="module" src="../scripts/init.js"></script>
+        <script type="module" src="../scripts/auth.js"></script>
     </head>
     <body>
         <header class="bg-indigo-500 text-white py-5 px-4 flex space-x-2">
@@ -28,6 +29,8 @@
           <p class="pt-10 text-2xl text-center font-bold">
             Sign Up
           </p>
+          
+          <p class="text-red-500" id="wrong"/>
 
           <div class="pt-10 pb-8 flex items-center justify-center">
           <form class="rounded w-60">
@@ -50,7 +53,7 @@
       </div>
 
       <div class="flex items-center justify-center">
-        <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+        <button class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded" id="submit_up">
   Submit
 </button>
 </div>
